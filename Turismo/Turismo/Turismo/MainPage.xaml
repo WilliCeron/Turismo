@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Turismo"
              x:Class="Turismo.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+	<Label Text="Welcome to Xamarin" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
