@@ -128,4 +128,7 @@
       <Name>Turismo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xxx.png" />
+  </ItemGroup>
 </Project>

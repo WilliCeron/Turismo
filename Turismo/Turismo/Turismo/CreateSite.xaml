@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Turismo.CreateSite">
+    
+    <StackLayout Orientation="Vertical" Padding="20,50,20,20">
+        <Label Text="Crear Sitio" TextColor="Blue" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20"/>
+        <Entry x:Name="entryNameS" Placeholder="Nombre"/>
+        <Entry x:Name="entryDescription" Placeholder="Descripcion"/>
+        <Entry x:Name="entryFood" Placeholder="Comida Tipica"/>
+        <Button Text="Crear Sitio" Clicked="ClickButtonCreateSite"/>
+    </StackLayout>
+    
+</ContentPage>

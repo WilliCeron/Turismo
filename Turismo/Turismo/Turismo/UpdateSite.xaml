@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Turismo.UpdateSite">
+    <StackLayout Orientation="Vertical" Padding="20,50,20,20">
+        <Label Text="Actualizar Sitio" TextColor="Blue" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20"/>
+
+        <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"/>
+        <Entry x:Name="entryNameUs" Placeholder="Nombre" Text="{Binding Name}"/>
+        <Entry x:Name="entryDescriptionUs" Placeholder="Descripcion" Text="{Binding Description}"/>
+        <Entry x:Name="entryFoodUs" Placeholder="Comida Tipica" Text="{Binding Food}"/>
+        <Button Text="Actualizar Sitio" Clicked="ClickButtonUpdateSite"/>
+    </StackLayout>
+    
+    
+</ContentPage>

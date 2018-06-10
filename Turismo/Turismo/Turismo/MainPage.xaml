@@ -3,9 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Turismo"
              x:Class="Turismo.MainPage">
-
-	<Label Text="Welcome a xamrin en 1" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout
+        Orientation="Vertical" 
+        Spacing="0" 
+        Padding="20, 40, 20, 20"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        BackgroundColor="#AAC03F">
+        <Image
+                Source="http://www.congresovisible.org/media/uploads/grupos/LOGOTIPO_NARI%C3%91O_VISIBLE.jpg"
+                HorizontalOptions="FillAndExpand"
+                WidthRequest="400"
+                HeightRequest="200"/>
+        
+   
+    <StackLayout Orientation="Vertical" Padding="20,50,20,20">
+        <Label Text="Ingreso de usuarios" TextColor="Blue" FontSize="Large" HorizontalOptions="Center"/>
+        <Entry x:Name="entryUser" Placeholder="Usuario"/>
+        <Entry x:Name="entryPass" Placeholder="Constraseña" IsPassword="True"/>
+        <Button Text="Ingresar" Clicked="ClickButtonSignIn"/>
+        <Button Text="Crear una cuenta aqui" Clicked="ClickButtonCreateUser"/>
+        </StackLayout>
+        
+    </StackLayout>
 
 </ContentPage>
