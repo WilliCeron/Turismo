@@ -5,7 +5,7 @@
     <StackLayout Padding="10, 20, 10 ,0"
                  BackgroundColor="#AAC03F"
                 >
-        
+        <Button Text="Crear Sitio" Clicked="ClickButtonShowWindowNewContact"/>
 
         <ListView x:Name="listViewContacts">
             <ListView.ItemTemplate>
@@ -15,6 +15,7 @@
                             
                             <ViewCell.ContextActions>
                             <MenuItem Clicked="ClickUpdateContact" CommandParameter="{Binding .}" Text="Actualizar" />
+                            <MenuItem Clicked="ClickVisitSite" CommandParameter="{Binding .}" Text="Visitar" />
                             <MenuItem Clicked="ClickDeleteContact" CommandParameter="{Binding Id}" Text="Eliminar" IsDestructive="True" />
                         </ViewCell.ContextActions>
                        
@@ -26,17 +27,17 @@
                             <Label Text="{Binding Name}" 
                                    FontSize="Medium"
                                    />
-                            <Label Text="{Binding Description}" />
+                          
 
                         </StackLayout>
-
+                       
                         
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Crear Sitio" Clicked="ClickButtonShowWindowNewContact"/>
-        <Button Text="Cerrar sesión" Clicked="ClickButtonSignOff"/>
+        
         <Button Text="Visitar" />
+        <Button Text="Cerrar sesión" Clicked="ClickButtonSignOff"/>
     </StackLayout>
 </ContentPage>

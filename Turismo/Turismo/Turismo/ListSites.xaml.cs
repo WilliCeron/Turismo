@@ -72,6 +72,28 @@ namespace Turismo
         {
             await Navigation.PushModalAsync(new UpdateSite(contact));
         }
+        // Metodo para visitar sitio
+        public void ClickVisitSite(object sender, EventArgs e)
+        {
+            var mi = sender as MenuItem;
+            var item = mi.BindingContext as Site;
+
+            Site visit = new Site()
+            {
+                Id = item.Id,
+                Name = item.Name,
+                Description = item.Description,
+                Food = item.Food,
+                Image = item.Image
+            };
+
+            showWindowVisitSite(visit);
+        }
+
+        async public void showWindowVisitSite(Site visit)
+        {
+            await Navigation.PushModalAsync(new VisiteSite(visit));
+        }
 
         public void ClickDeleteContact(object sender, EventArgs e)
         {

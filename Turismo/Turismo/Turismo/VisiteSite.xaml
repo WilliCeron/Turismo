@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Turismo.VisiteSite">
+    <StackLayout Orientation="Vertical" Padding="20,50,20,20"
+                 BackgroundColor="Black">
+        <Label Text=" Sitio Turistico" TextColor="Blue" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20"/>
+
+        <Image Source="{Binding Image}" WidthRequest="200" HeightRequest="200"/>
+        <ScrollView
+            BackgroundColor="Black"
+            VerticalOptions="FillAndExpand"
+            >
+            <StackLayout
+                Orientation="Vertical"
+                Spacing="0"
+                Padding="10"
+                >
+        
+       
+        <Label
+            x:Name="entryNameUs" 
+            Text="{Binding Name}"
+            TextColor="White"
+            FontSize="Large"
+            HorizontalTextAlignment="Center"/>
+
+        <Label
+            x:Name="entryDescriptionUs"
+           Text="{Binding Description}"
+            TextColor="White"
+            FontSize="Medium"/>
+
+        <Label
+            x:Name="entryFoodUs" 
+            Text="{Binding Food}"
+           TextColor="White"
+            FontSize="Medium"/>
+
+            </StackLayout>
+
+        </ScrollView>
+
+        <Button Text="Regresar" Clicked="ClickRetorn"
+                BackgroundColor="LightGreen"/>
+
+    </StackLayout>
+  
+    
+</ContentPage>
