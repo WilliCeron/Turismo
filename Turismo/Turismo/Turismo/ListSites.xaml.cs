@@ -125,5 +125,14 @@ namespace Turismo
         {
             await Navigation.PushModalAsync(new MainPage());
         }
+
+
+
+        async public void ClickGaleria()
+        {
+            await Navigation.PushModalAsync(new Galeria());
+        }
+
+
     }
 }

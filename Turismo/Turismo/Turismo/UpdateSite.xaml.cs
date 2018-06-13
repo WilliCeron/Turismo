@@ -47,5 +47,6 @@ namespace Turismo
 
             await Navigation.PushModalAsync(new ListSites());
         }
+
     }
 }

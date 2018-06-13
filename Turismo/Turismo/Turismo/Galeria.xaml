@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Turismo.Galeria">
+
+
+    <StackLayout
+        Orientation="Vertical"
+        Spacing="0"
+        BackgroundColor="Black">
+        <StackLayout
+            Orientation="Vertical"
+             Spacing="0"
+            BackgroundColor="Black">
+            <Label
+                Text="Galeria"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontSize="Medium"/>
+
+            <Label
+                Text="FOTOS"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="Center"
+                FontSize="Large"
+                TextColor="White"
+                />
+
+
+        </StackLayout >
+
+
+
+        <ScrollView
+            BackgroundColor="White"
+            VerticalOptions="FillAndExpand"
+            Orientation="Horizontal">
+
+            <StackLayout
+                Orientation="Horizontal"
+                Spacing="0"
+                Padding="10"
+                BackgroundColor="White">
+
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Mapa_de_Nari%C3%B1o_%28subdivisiones2%29.svg/1200px-Mapa_de_Nari%C3%B1o_%28subdivisiones2%29.svg.png"/>
+
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://tierracolombiana.org/wp-content/uploads/2017/09/17.jpg"/>
+
+                    <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="http://tecnicoindustrialpasto.edu.co/documen/paginitas/TODO%20PROYECTO-CASTRO-GELPUD/proyecto%20final%20Gelpud-Castro/gifs/buesaco1.1.gif"/>
+
+                    <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://admin.kienyke.com/wp-content/uploads/2018/01/las-lajas0004.png"/>
+
+                    <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://www.elheraldo.co/sites/default/files/styles/width_860/public/articulo/2017/01/14/santuario-de-las-lajas-1.jpg?itok=S7qUGvXF"/>
+
+                    <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://latinoamericaexuberante.org/wp-content/uploads/2017/05/14352517501_0bb5e7824c_o-1-800x500_c.jpg"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://upload.wikimedia.org/wikipedia/commons/3/3d/Laguna_de_la_Cocha_%28El_Encano%29_2.JPG"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://encolombia.com/wp-content/uploads/2013/07/turismo-cumbal.jpg"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://i.pinimg.com/736x/19/51/b1/1951b19febd917191274d2a3d92120d1--colombia-america-latina.jpg"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="http://congreso.aunar.edu.co/images/fotos-slider-articulos/pasto.jpg"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="http://pagina10.com/web/wp-content/uploads/2017/01/582f73f3d9bf32aef49b6e4c9b2ef34d.jpg"/>
+
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="https://upload.wikimedia.org/wikipedia/commons/2/25/TumacoBeach.jpg"/>
+
+               
+                <Image
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    Source="http://www.congresovisible.org/media/uploads/fotos_perfil/2948/narino-visible.jpg"/>
+
+
+            </StackLayout>
+
+            
+        </ScrollView>
+
+        <Button
+                     Text="REGRESAR MENU "
+                     Margin="0, 20, 0, 20"
+                     Clicked="regresarlista"/>
+
+    </StackLayout>
+
+
+</ContentPage>

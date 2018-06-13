@@ -64,5 +64,9 @@ namespace Turismo
         {
             await Navigation.PushModalAsync(new ListSites());
         }
+        async public void ClickButtonHome()
+        {
+            await Navigation.PushModalAsync(new MainPage());
+        }
     }
 }

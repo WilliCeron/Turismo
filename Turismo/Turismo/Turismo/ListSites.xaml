@@ -36,8 +36,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
-        <Button Text="Visitar" />
+
+        <Button Text="Galeria" Clicked="ClickGaleria"  />
         <Button Text="Cerrar sesión" Clicked="ClickButtonSignOff"/>
     </StackLayout>
 </ContentPage>
